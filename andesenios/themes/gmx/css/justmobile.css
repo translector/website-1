@@ -1,6 +1,65 @@
 @media only screen and (max-width: 769px) {
     
 
+/* Slider: Puntos de la navegación 
+También presente en custom-styles.css */
+
+    .slick-dots li button::before {
+        font-size: 6px;
+      }
+/* Slider: Puntos de la navegación 
+También presente en custom-styles.css */
+
+
+.submenu {
+    display: none;
+}
+
+.language-switcher-language-url {
+    float: right;
+    padding-top: 35px;
+}
+
+.responsive-menu-toggle-icon span.label {
+  display: none;
+}
+
+.responsive-menu-toggle-icon:after, .responsive-menu-toggle-icon span.icon {
+  display: none;
+}
+
+.region-menu {
+    color: #000;
+}
+
+.region-menu a {
+    top: 10px;
+}
+
+.region-menu a:hover {
+text-decoration: none;
+}
+
+.region-menu a.is-active {
+    text-decoration: none;
+}
+
+.responsive-menu-toggle-icon {
+    position: relative;
+    padding-left: 1.25em;
+}
+
+.responsive-menu-toggle-icon:before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    width: 1em;
+    height: 0.15em;
+    background: white;
+    box-shadow: 
+      0 0.25em 0 0 white,
+      0 0.5em 0 0 white;
+}
 
     h1 {
         font-size: 36px;
@@ -34,49 +93,6 @@
 
     nav#block-navegacionprincipal {
         display: none;
-    }
-
-
-
-    .region-menu {
-        color: #000;
-    }
-
-
-    .region-menu a {
-        content: '';
-        position: absolute;
-        color: #000;
-        right: 7px;
-        top: 50px;
-        width: 60px;
-        height: 44px;
-        border-radius: 4px;
-    }
-
-    .region-menu a:hover {
-  text-decoration: none;
-    }
-
-    .region-menu a.is-active {
-        text-decoration: none;
-    }
-
-    .responsive-menu-toggle-icon {
-        position: relative;
-        padding-left: 1.25em;
-    }
-    
-    .responsive-menu-toggle-icon:before {
-        content: "";
-        position: absolute;
-        top: 0.5em;
-        width: 1em;
-        height: 0.15em;
-        background: black;
-        box-shadow: 
-          0 0.25em 0 0 black,
-          0 0.5em 0 0 black;
     }
 
 #off-canvas ul {

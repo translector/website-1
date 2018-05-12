@@ -1,8 +1,11 @@
 @media only screen and (min-width: 450px) {
     
+  .language-switcher-language-url {
+    padding-top: 100px;
+  }
 
   h1 {
-    font-size: 100px;
+    font-size: 50px;
     line-height: 120px;
     letter-spacing: 0px;
   }

@@ -77,12 +77,6 @@ img {
   height: 100%;
 }
 
-
-.menu {
-  background: #fff;
-  padding: 1px 0 1px 0;
-}
-
 .about {
   text-align: center;
 }
@@ -97,7 +91,7 @@ img {
   color: #333131;
 }
 
-.rs  {
+/* .rs  {
   background: #333131;
   color: #888787;
   padding: 10px 20px 90px 20px;
@@ -123,13 +117,13 @@ img {
 
 .sociales li {
   padding: 0 5px 0 5px;
-}
+} */
 
 .footer  {
   background: #c8a411;
-  color: #888787;
-  font-size: 18px;
-  padding: 60px 0 30px 0;
+  color: #f5f5f5;
+  font-size: 16px;
+  padding: 30px 0 30px 0;
   text-align: center;
 }
 

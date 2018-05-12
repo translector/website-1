@@ -14,9 +14,11 @@ libraries:
 regions:
   header: 'Header'
   menu: 'Menu'
-  welcome_banner_text: 'Welcome Banner Text'
+  mensajes: 'Mensajes'
   highlighted: 'Highlighted'
   slider: 'Slider'
+  switcher: 'Switcher'
+  submenu: 'Submenu'
   page_title: 'Page Title'
   breadcrumb: 'Breadcrumb'
   content: 'Content'

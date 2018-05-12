@@ -1,27 +1,38 @@
 <div id="page-wrapper">
   <div id="page">
 
-  <!--Start: Branding and Menu -->
-<div id="stick">
-  <div class="menu">
-    <div class="container">
-      <div class="row">
-        {% if page.header %}
-          <div class="col-xs-6 col-md-4">
-            {{ page.header }}
-          </div>
-        {% endif %}
-        <!-- Navigation -->
-        {% if page.menu %}
-          <div class="col-xs-6 col-md-8">
-            {{ page.menu }} 
-          </div>
-        {% endif %}
-        <!--End Navigation -->
-      </div>
+    <div id="stick">
+        <div class="container">
+              <div class="col-xs-6 col-md-3">
+                {{ page.header }}
+              </div>
+              <div class="submenu col-md-6">
+                <div>
+                  {{ page.submenu }} 
+                </div>
+              </div>
+              <div class="col-xs-6 col-md-3">
+                {{ page.switcher }} 
+              </div>
+        </div>
     </div>
-  </div>
-</div>
+
+      <div class="menu">
+        <div class="container">
+            <div class="col-xs-5 col-md-8 col-md-offset-1">
+              {{ page.menu }}
+            </div>
+            <div class="col-xs-7 col-md-3">
+                <ul class="social">
+									<li><a href="#" class="icon fa-facebook"><span></span></a></li>
+									<li><a href="#" class="icon fa-twitter"><span></span></a></li>
+                  <li><a href="#" class="fa-vimeo"><span></span></a></li>
+								</ul>
+            </div>
+        </div>
+      </div>
+
+      <div class="linea"></div>
 
   <!--Start: Slider -->
     {% if page.slider %}
@@ -31,29 +42,42 @@
     {% endif %}
   <!--End: Slider -->
 
+    <div class="lineabaja"></div>
 
-      <!--- Start content -->
-      {% if page.content %}
-        <div class="container">
-          <div class="row contenido">
-              {{ page.content }}
-          </div>
+    {% if page.mensajes %}
+      <div class="container">
+        <div class="row mensajes">
+            {{ page.mensajes }}
         </div>
-      {% endif %}
-      <!---End content -->
+      </div>
+    {% endif %}
 
+    {% if page.content %}
+      <div class="container">
+        <div class="row contenido">
+            {{ page.content }}
+        </div>
+      </div>
+    {% endif %}
 
-<!--Start: Footer -->
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          {{ page.footera }}
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-md-offset-1">
+            {{ page.footera }}
+          </div>
+          <div class="col-md-3">
+            {{ page.footerb }}                
+                <ul class="social-footer">
+									<li><a href="#" class="icon fa-facebook"><span></span></a></li>
+									<li><a href="#" class="icon fa-twitter"><span></span></a></li>
+                  <li><a href="#" class="fa-envelope"><span></span></a></li>
+                  <li><a href="#" class="fa-vimeo"><span></span></a></li>
+								</ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-<!--End: Footer -->
 
   </div>
 </div>
