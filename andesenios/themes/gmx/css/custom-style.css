@@ -6,9 +6,13 @@ Estilos relacionados al Alternador de Idiomas.
 .language-switcher-language-url ul li {
   display: inline;
   font-size: 0px;
-  padding: 5px 10px;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+  color: #CF5900;
+}
 
 .language-icon {
   height: 20px;
@@ -57,10 +61,10 @@ Estilos relacionados al Alternador de Idiomas.
 /* START: MENU ICON RELATED STUFF */
 
 .menu {
-  background: #CF5900;
+  background: url('../images/bg.png') repeat-x;
+  background-color: #CF5900;
   padding: 1px 0 1px 0;
 }
-
 
 .region-menu ul {
   list-style-type: none;
@@ -71,13 +75,15 @@ Estilos relacionados al Alternador de Idiomas.
 
 .region-menu li {
   float: left;
-  padding: 5px 14px;
+  padding: 10px 14px 0 14px;
 }
 
 .region-menu li a {
   display: block;
   color: #fff;
-  padding: 0;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0 0 5px 0;
   text-decoration: none;
 }
 
@@ -89,8 +95,8 @@ Estilos relacionados al Alternador de Idiomas.
 
 .region-menu li a.is-active {
   color: #E3B100;
+  background: url('../images/triangle1.png') no-repeat bottom;
 }
-
 
 /* END: MENU ICON RELATED STUFF */
 /* Menú Alternativo */
@@ -102,16 +108,27 @@ Estilos relacionados al Alternador de Idiomas.
 }
 
 .region-submenu ul li {
-  display: inline;
+  display: inline-block;
 }
 
 .region-submenu a {
+  background: transparent;
   color: #CF5900;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   padding: 0 10px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.region-submenu a:hover {
+  background-color: transparent;
+  color: #CF5900;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
 }
 
 
@@ -120,6 +137,7 @@ Estilos relacionados al Alternador de Idiomas.
 .linea {
   background: #E3B100;
   padding: 5px;
+  margin-top: -1px;
 }
 
 .lineabaja {
@@ -164,11 +182,7 @@ Estilos relacionados al Alternador de Idiomas.
 
 /* Iconos redes sociaes UP*/
 
-ul.social {
-  float: right;
-  margin: 0 0 0 35px;
-  padding: 3px 0 0 0;
-}
+
 
 ul.social li {
   display: inline;
@@ -179,10 +193,10 @@ ul.social li a {
   display: inline-block;
   color: #f2f1f1;
   font-family: FontAwesome;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   text-decoration: none;
-  padding: 6px 5px 0 5px;
+  padding: 8px 5px 0 5px;
 }
 
 ul.social li a:hover {
@@ -283,7 +297,12 @@ body {
 /* Formulario de contacto del sitio. */
 
 label {
-    display: block;
+  color: #443e3e;
+  display: block;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 elemento {
@@ -401,11 +420,11 @@ nav h2 {
   margin-top: 20px;
 }
 
-.menu-base-theme a{
+.menu-base-theme a {
   border-bottom: 1px solid #EEF0F7;
 }
 
-.menu-base-theme a span.sub-arrow{
+.menu-base-theme a span.sub-arrow {
   color: #999;
   font-size: 22px;
   padding: 5px;
@@ -414,7 +433,7 @@ nav h2 {
   background: #EFEFEF;
 }
 
-.navbar-toggle{
+.navbar-toggle {
   z-index: 999;
 }
 
@@ -425,7 +444,7 @@ nav h2 {
 
 /*Contact form*/
 
-.contact-message-feedback-form{
+.contact-message-feedback-form {
   max-width: 650px;
   margin: 0 auto;
   border: 1px solid #D8D8D8;
@@ -435,7 +454,7 @@ nav h2 {
 
 .contact-message-feedback-form .form-text,
 .contact-message-feedback-form .form-email,
-.contact-message-feedback-form .form-textarea{
+.contact-message-feedback-form .form-textarea {
   width: 100%;
 }
 
@@ -443,7 +462,7 @@ nav h2 {
 
 .user-login-form,
 .user-form,
-.user-pass{
+.user-pass {
   max-width: 650px;
   margin: 40px auto;
   border: 1px solid #ddd;
@@ -455,7 +474,7 @@ nav h2 {
 .user-login-form .form-email,
 .user-form .form-text,
 .user-form .form-email,
-.user-pass .form-text{
+.user-pass .form-text {
   width: 100%;
 }
 
@@ -468,7 +487,7 @@ nav h2 {
 
 /*Maintainance*/
 
-.maintenance-page{
+.maintenance-page {
   background: url(../images/maintenance-bg.png) #66CBFF center no-repeat;
   color: #fff;
   text-align: center;
@@ -489,42 +508,42 @@ nav h2 {
   font-size: 14px;
 }
 
-.maintenance-msg h1{
+.maintenance-msg h1 {
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .maintenance-page .brand,
-.maintenance-page .name-and-slogan{
+.maintenance-page .name-and-slogan {
   display: inline-block;
   vertical-align: middle;
 }
 
-.maintenance-page .site-name a{
+.maintenance-page .site-name a {
   color: #404040;
 }
 
 .maintenance-page .site-slogan,
-.maintenance-page .name-and-slogan{
+.maintenance-page .name-and-slogan {
   display: none;
 }
 
 /*links inline*/
 
-ul.links.inline li{
+ul.links.inline li {
   display: inline-block;
   padding-right: 10px;
 }
 
 /*profile*/
 
-.profile > div{
+.profile > div {
   padding-right: 5px;
   display: inline-block;
   vertical-align: top;
 }
 
-.profile h4.label{
+.profile h4.label {
   color: #333;
   display: block;
   text-align: left;
@@ -532,7 +551,7 @@ ul.links.inline li{
 }
 
 
-a.has-submenu  {
+a.has-submenu {
 	color: #fff;
 }
 
