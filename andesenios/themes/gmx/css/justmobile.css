@@ -1,5 +1,28 @@
 @media only screen and (max-width: 769px) {
     
+    .menu {
+        text-align: left;
+    }
+
+    ul.social {
+        float: right;
+        margin: 0 0 0 35px;
+        padding: 3px 0 0 0;
+      }
+
+    .language-switcher-language-url ul li {
+        display: inline;
+        font-size: 0px;
+        padding: 5px 10px;
+      }
+   /* Footer related stuff */ 
+    .footer  {
+        text-align: center;
+      }
+      
+      .social-footer {
+        text-align: center;
+      }
 
 /* Slider: Puntos de la navegación 
 También presente en custom-styles.css */

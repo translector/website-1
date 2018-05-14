@@ -6,12 +6,12 @@
               <div class="col-xs-6 col-md-3">
                 {{ page.header }}
               </div>
-              <div class="submenu col-md-6">
+              <div class="submenu col-md-7">
                 <div>
                   {{ page.submenu }} 
                 </div>
               </div>
-              <div class="col-xs-6 col-md-3">
+              <div class="col-xs-6 col-md-2">
                 {{ page.switcher }} 
               </div>
         </div>
@@ -19,10 +19,10 @@
 
       <div class="menu">
         <div class="container">
-            <div class="col-xs-5 col-md-8 col-md-offset-1">
+            <div class="col-xs-5 col-md-9 col-md-offset-1">
               {{ page.menu }}
             </div>
-            <div class="col-xs-7 col-md-3">
+            <div class="col-xs-7 col-md-2">
                 <ul class="social">
 									<li><a href="#" class="icon fa-facebook"><span></span></a></li>
 									<li><a href="#" class="icon fa-twitter"><span></span></a></li>
@@ -52,21 +52,27 @@
       </div>
     {% endif %}
 
-    {% if page.content %}
-      <div class="container">
-        <div class="row contenido">
-            {{ page.content }}
-        </div>
+<div class="container"> 
+  <div class="row contenido">
+      <div class="col-md-12">
+        <h1>{{ page['#title'] }}</h1>
       </div>
-    {% endif %}
+      <div class="col-md-6">
+        {{ page.content }}
+      </div>
+      <div class="col-md-6">
+        {{ page.contentright }}
+      </div>
+  </div>
+</div>
 
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 col-md-offset-1">
+          <div class="col-md-8">
             {{ page.footera }}
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             {{ page.footerb }}                
                 <ul class="social-footer">
 									<li><a href="#" class="icon fa-facebook"><span></span></a></li>
